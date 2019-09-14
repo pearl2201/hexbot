@@ -1,0 +1,20 @@
+{
+  "name": "hexbot",
+  "version": "1.0.0",
+  "description": "image classification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+	"dev": "webpack --watch-poll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
+  },
+  "dependencies": {
+    "@mr.y/clusterfck": "^0.6.0"
+  }
+}

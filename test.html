@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="https://www.lactame.com/lib/image-js/0.21.2/image.min.js"></script> 
+  
+  <style>
+	html{
+		min-width:100%;
+	}
+	body{
+		display:flex;
+		flex-direction:column;
+		min-width:100%;
+	}
+	
+	body > div{
+		margin-bottom:10px;
+	}
+	.form-field {
+		display:flex;
+		flex-direction:row;
+	}
+	
+	.form-field label{
+		flex-basis: 20%;
+	}
+	
+	img{
+		max-width: 90%;
+		
+	}
+  </style>
+</head>
+
+
+<body>
+	<div class="form-field">
+		<label for="color_count">
+				Color Count:
+		</label>
+
+		<input type="number" name="quantity" id="color_count" min="1" max="5">
+	</div>
+	<div class="form-field">
+		<label for="file">
+			Image:
+		</label>
+		<input type="file" id="file" name="file" enctype="multipart/form-data"/>
+	</div>
+	<div style="display:block">
+		<h6> Original Image </h6>
+		<img id="color"  />
+	</div>
+	<div>
+		<h6> Reconstruct Image </h6>
+		<img id="result" />
+	</div>
+	<script src="dist/bundle.js"></script>
+
+</body>
+</html> 
